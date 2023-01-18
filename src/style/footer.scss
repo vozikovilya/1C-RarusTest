@@ -1,0 +1,190 @@
+
+.footer {
+    background-color: $gray4;
+    padding: 24px 0 80px;
+
+    @media screen and ($small) {
+        padding: 36px 0;
+    }
+    @media screen and ($tablet) {
+        padding: 36px 0 55px;
+    }
+
+    &__container {
+        display: grid;
+
+        @media screen and ($small) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and ($tablet) {
+            row-gap: 36px;
+        }
+    }
+
+    &-menu__list {
+        @include flex(center, flex-start);
+        margin: 0 0 20px;
+
+        @media screen and ($tablet) {
+            margin: 0;
+        }
+    }
+    &-menu__item:not(:first-child) {
+        margin: 0 0 0 25px;
+        
+        @media screen and ($small) {
+            margin: 0 0 0 24px;
+        }
+        @media screen and ($tablet) {
+            margin: 0 0 0 62px;
+        }
+    }
+    &-menu__link {
+        font-size: 14px;
+        line-height: 22px;
+        color: $black1;
+        transition: .3s;
+
+        &:hover {
+            color: $red;
+        }
+        
+        @media screen and ($small) {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    &-contacts__list {
+        @include flex(flex-start, center);
+        flex-direction: column;
+        margin: 0 0 12px;
+        
+        @media screen and ($small) {
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        @media screen and ($tablet) {
+            justify-content: flex-end;
+            margin: 0;
+        }
+    }
+    &-contacts__item:not(:first-child) {
+        margin: 8px 0 0;
+        
+        @media screen and ($small) {
+            margin: 0 0 0 24.03px;
+        }
+        @media screen and ($tablet) {
+            margin: 0 0 0 62px;
+        }
+    }
+    &-contacts__link {
+        @include flex(center, center);
+        font-size: 14px;
+        line-height: 22px;
+        color: $black1;
+        transition: .3s;
+
+        &:hover {
+            color: $red;
+        }
+        
+        @media screen and ($small) {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+    &-contacts__svg {
+        display: block;
+        fill: $white;
+        stroke: $gray2;
+        margin: 0 8px 0 0;
+        
+        @media screen and ($small) {
+            margin: 0 10px 0 0;
+        }
+    }
+    &-contacts__svg_tel {
+        width: 18px;
+        height: 18px;
+        stroke-width: 1.5;
+        
+        @media screen and ($small) {
+            width: 19px;
+            height: 19px;
+        }
+    }
+    &-contacts__svg_mail {
+        width: 18px;
+        height: 18px;
+        stroke-width: 1.35849;
+        
+        @media screen and ($small) {
+            width: 26px;
+            height: 17px;
+        }
+    }
+
+    &-copyright {
+        @media screen and ($small) {
+            grid-column: 1/3;
+        }
+        @media screen and ($tablet) {
+            align-self: center;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+    }
+    &-copyright__text {
+        font-size: 12px;
+        line-height: 18px;
+        color: $gray2;
+
+        @media screen and ($small) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &-social {
+        grid-row: 3/4;
+        margin: 0 0 24px;
+        
+        @media screen and ($small) {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            margin: 0 0 3px;
+        }
+        @media screen and ($tablet) {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            margin: 0;
+        }
+    }
+    &-social__list {
+        @include flex(center, flex-start);
+
+        @media screen and ($small) {
+            justify-content: flex-end;
+        }
+    }
+    &-social__item:not(:first-child) {
+        margin: 0 0 0 12px;
+    }
+    &-social__svg {
+        display: block;
+        width: 30px;
+        height: 30px;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+        
+        @media screen and ($small) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

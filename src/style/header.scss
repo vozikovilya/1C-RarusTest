@@ -1,0 +1,457 @@
+.header {
+
+    // Header Top
+
+    &-top {
+        display: none;
+        
+        @media screen and ($phone) {
+            display: block;
+            padding: 8px 0 6px;
+            border-bottom: 2px solid $gray1;
+        }
+        @media screen and ($tablet) {
+            padding: 8px 0;
+        }
+    }
+
+    &-top__block {
+        @include flex(center, space-between);
+    }
+
+    &-city,
+    &-shop,
+    &-phone {
+        @include flex(center, center);
+        font-size: 16px;
+        line-height: 19px;
+        color: $black1;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+    &-city__svg,
+    &-shop__svg,
+    &-phone__svg {
+        margin: 0 6px 0 0;
+    }
+
+    &-city__svg,
+    &-phone__svg {
+        width: 18px;
+        height: 18px;
+        fill: $white;
+        stroke-width: 1.5px;
+        stroke: $gray2;
+    }
+
+    &-city {
+        background-color: transparent;
+        margin: 0 36px 0 0;
+    }
+
+    &-phone {
+        margin: 0 0 0 auto;
+    }
+
+    // Header Menu
+
+    &-menu {
+        padding: 23.33px 0 18px;
+
+        @media screen and ($small) {
+            padding: 6px 0 18px;
+        }
+    }
+    &-menu__block {
+        display: flex;
+        flex-wrap: wrap;
+        
+        @media screen and ($small) {
+            @include flex(center, space-between);
+            padding: 8px 0;
+            flex-wrap: nowrap;
+        }
+    }
+
+    &-logo {
+        flex-basis: 50%;
+
+        @media screen and ($small) {
+            flex-basis: auto;
+        }
+    }
+
+    &-logo__text {
+        font-family: 'Rosario', sans-serif;
+        font-weight: 700;
+        font-size: 17.3858px;
+        line-height: 21px;
+        letter-spacing: 0.105em;
+        text-transform: uppercase;
+        color: $red;
+
+        @media screen and ($small) {
+            font-size: 18.3172px;
+            line-height: 22px;
+        }
+        @media screen and ($phone) {
+            font-size: 22px;
+            line-height: 27px;
+        }
+    }
+
+    &-search {
+        flex: auto;
+        @include flex(center, flex-start);
+        border: 2px solid $gray3;
+        border-radius: 100px;
+        padding: 8px 18px;
+        margin: 23.67px 0 0;
+        
+        @media screen and ($small) {
+            padding: 10px 18px;
+            margin: 0;
+        }
+    }
+    &-search__btn,
+    &-search__svg {
+        width: 18px;
+        height: 18px;
+        
+        @media screen and ($small) {
+            width: 26px;
+            height: 26px;
+        }
+    }
+    &-search__btn {
+        margin: 0 6px 0 0;
+    }
+    &-search__svg {
+        fill: $red;
+    }
+    &-search__input {
+        width: 100%;
+        border: none;
+    }
+    &-search__input,
+    &-search__input::placeholder {
+        font-size: 14px;
+        line-height: 19px;
+        color: $gray2;
+        
+        @media screen and ($small) {
+            font-size: 16px;
+        }
+    }
+
+    &-search__btn {
+        background-color: transparent;
+    }
+
+    &-menu__list {
+        display: none;
+        
+        @media screen and ($small) {
+            @include flex(center, flex-start);
+            margin: 0 0 0 25px;
+        }
+        @media screen and ($phone) {
+            margin: 0 0 0 35px;
+        }
+    }
+
+    &-menu__item,
+    &-mobile__item {
+        margin: 0 0 0 24px;
+
+        &:first-child {
+            margin: 0;
+        }
+    }
+
+    &-menu__link {
+        @include flex(center, center);
+        font-size: 0;
+
+        @media screen and ($tablet) {
+            flex-direction: column;
+            font-size: 16px;
+            line-height: 19px;
+            color: $black1;
+            transition: .3s ease-in-out;
+    
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+
+    &-menu__svg,
+    &-mobile__svg {
+        width: 18px;
+        height: 18px;
+        fill: $gray2;
+    }
+    &-menu__svg {
+        margin: 0 0 2px 0;
+    }
+    &-mobile__svg_stroke {
+        fill: $white;
+        stroke: $gray2;
+    }
+
+    // Header Mobile
+
+    &-mobile__list {
+        @include flex(center, flex-start);
+        flex-basis: 50%;
+        justify-content: flex-end;
+
+        @media screen and ($small) {
+            display: none;
+        }
+    }
+
+    &-burger {
+        flex: none;
+        max-width: fit-content;
+        background-color: transparent;
+        margin: 23.67px 15px 0 0;
+
+    }
+    &-burger__svg {
+        width: 24px;
+        height: 17px;
+        stroke: $gray2;
+        stroke-width: 2.16667;
+
+        @media screen and ($small) {
+            display: none;
+        }
+    }
+
+    // Header Bottom
+
+    &-bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: $white;
+        box-shadow: 0px -3px 13px rgba(146, 146, 146, 0.25);
+        padding: 13px 10px 11px;
+        
+        @media screen and ($small) {
+            display: none;
+        }
+    }
+
+    &-bottom__list {
+        @include flex(center, space-between);
+    }
+
+    &-bottom__item.active {
+        pointer-events: none;
+    }
+
+    &-bottom__link {
+        @include flex(center, center);
+        flex-direction: column;
+    }
+
+    &-bottom__svg {
+        width: 24px;
+        height: 24px;
+        fill: $gray2;
+        margin: 0 0 4px;
+    }
+
+    &-bottom__item.active &-bottom__svg {
+        fill: $red;
+    }
+    
+    &-bottom__name {
+        font-size: 10px;
+        line-height: 12px;
+        color: $black1;
+    }
+
+    &-bottom__item.active &-bottom__name {
+        color: $red;
+    }
+}
+
+.menu-catalog {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    background-color: $white;
+    padding: 48px 0;
+    transition: .3s ease-in-out;
+
+    &.active {
+        left: 0;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: $black1;
+        padding: 0 10px;
+    }
+
+    &__close {
+        position: absolute;
+        top: 18px;
+        right: 10px;
+        background-color: transparent;
+    }
+    &__close-svg {
+        width: 18px;
+        height: 18px;
+        stroke: $gray2;
+        stroke-width: 2;
+    }
+
+    &__list {
+        height: calc(100vh - 76px);
+        overflow: auto;
+        padding: 18px 0;
+    }
+
+    &__item {
+        background-color: $white;
+        padding: 8px 10px 6px;
+        
+        &:not(:last-child) {
+            border-bottom: 2px solid $gray2;
+        }
+    }
+    &__item-link {
+        @include flex(center, flex-start);
+    }
+    &__item-img {
+        width: 32px;
+        height: 32px;
+        margin: 0 8px 0 0;
+    }
+    &__item-name,
+    &__subitem-link {
+        font-size: 16px;
+        line-height: 19px;
+        color: $black1;
+    }
+    &__item-name {
+        padding: 0 20px 0 0;
+    }
+    &__item-svg {
+        width: 8px;
+        height: 15px;
+        fill: $gray2;
+        margin: 0 0 0 auto;
+        transition: .3s ease-in-out;
+    }
+    &__item.active &__item-svg {
+        transform: rotate(90deg);
+    }
+
+    &__sublist {
+        overflow: hidden;
+        opacity: 0;
+        height: 0;
+        transition: .3s ease-in-out;
+    }
+    &__item.active .menu-catalog__sublist{
+        overflow: visible;
+        opacity: 1;
+        height: 100%;
+        margin: 5px 0 0;
+        transition: .3s ease-in-out;
+    }
+
+    &__subitem-link {
+        display: block;
+        padding: 3px 0 3px 20px;
+    }
+}
+
+.swiper {
+    margin: 0 -10px 0 0;
+
+    @media screen and ($tablet) {
+        margin: 0;
+    }
+
+    &-slide {
+        width: fit-content;
+    }
+    &-slide__link {
+        @include flex(center, center);
+        font-size: 16px;
+        line-height: 19px;
+        color: $black1;
+        white-space: nowrap;
+        transition: .3s ease-in-out;
+    }
+    &-slide__svg {
+        width: 18px;
+        height: 18px;
+        fill: $black1;
+        margin: 0 6px 0 0;
+    }
+    &-slide.active {
+        pointer-events: none;
+    }
+    &-slide.active &-slide__link,
+    &-slide__link:hover {
+        color: $red;
+
+        & .swiper-slide__svg {
+            fill: $red;
+        }
+    }
+    &-button__prev,
+    &-button__next {
+        display: none;
+
+        @media screen and ($tablet) {
+            display: block;
+            position: absolute;
+            top: 1px;
+            z-index: 1;
+            transition: .3s ease-in-out;
+            cursor: pointer;
+    
+            &:hover .swiper-button__svg {
+                fill: $red;
+                stroke: $white;
+            }
+        }
+    }
+    &-button__prev {
+        left: 0;
+    }
+    &-button__next {
+        right: 0;
+    }
+    &-button-disabled {
+        transform: scale(0);
+    }
+    &-button__svg {
+        width: 18px;
+        height: 18px;
+        fill: $white;
+        stroke: $gray2;
+        transition: .3s ease-in-out;
+    }
+    &-button__prev &-button__svg {
+        transform: rotate(180deg);
+    }
+}

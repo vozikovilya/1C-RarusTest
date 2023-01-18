@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css?v=af4348d74369fcb6119d9f3b94e36185" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?v=af4348d74369fcb6119d9f3b94e36185"/>
+        <link rel="stylesheet" href="./css/main.min.css?v=af4348d74369fcb6119d9f3b94e36185">
+    </head>
+    <body class="body" id="body">
+        <header class="header" id="header">
+            <div class="header-top">
+                <div class="header-top__container container">
+                    <div class="header-top__block">
+                        <button class="header-city" type="button">
+                            <svg class="header-city__svg"><use xlink:href="img/sprite.svg#i-geo"></use></svg>
+                            г. Рязань
+                        </button>
+                        <a href="" class="header-shop">
+                            <svg class="header-shop__svg svg"><use xlink:href="img/sprite.svg#i-shop"></use></svg>
+                            Магазины
+                        </a>
+                        <a href="tel:8 (800) 000 00 00" class="header-phone">
+                            <svg class="header-phone__svg"><use xlink:href="img/sprite.svg#i-phone"></use></svg>
+                            8 (800) 000 00 00
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu">
+                <div class="header-menu__container container">
+                    <div class="header-menu__block">
+                        <a href="" class="header-logo">
+                            <span class="header-logo__text">Электросити</span>
+                        </a>
+                        <ul class="header-mobile__list">
+                            <li class="header-mobile__item">
+                                <a href="" class="header-mobile__link">
+                                    <svg class="header-mobile__svg"><use xlink:href="img/sprite.svg#i-purchases"></use></svg>
+                                </a>
+                            </li>
+                            <li class="header-mobile__item">
+                                <a href="" class="header-mobile__link">
+                                    <svg class="header-mobile__svg"><use xlink:href="img/sprite.svg#i-shop"></use></svg>
+                                </a>
+                            </li>
+                            <li class="header-mobile__item">
+                                <a href="" class="header-mobile__link">
+                                    <svg class="header-mobile__svg header-mobile__svg_stroke"><use xlink:href="img/sprite.svg#i-geo"></use></svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="header-burger">
+                            <svg class="header-burger__svg"><use xlink:href="img/sprite.svg#i-burger"></use></svg>
+                        </button>
+                        <div class="header-mobile__menu-catalog menu-catalog">
+                            <span class="menu-catalog__title">Каталог</span>
+                            <button class="menu-catalog__close">
+                                <svg class="menu-catalog__close-svg"><use xlink:href="img/sprite.svg#i-close"></use></svg>
+                            </button>
+                            <ul class="menu-catalog__list">
+                                <li class="menu-catalog__item">
+                                    <a href="" class="menu-catalog__item-link">
+                                        <img class="menu-catalog__item-img" src="../img/menu-icons/i-1.png" alt="">
+                                        <span href="" class="menu-catalog__item-name">Ноутбуки и аксессуары</span>
+                                        <svg class="menu-catalog__item-svg"><use xlink:href="img/sprite.svg#i-arrow-right"></use></svg>
+            
+                                    </a>
+                                    <ul class="menu-catalog__sublist">
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="" class="menu-catalog__item-link">
+                                        <img class="menu-catalog__item-img" src="../img/menu-icons/i-2.png" alt="">
+                                        <span href="" class="menu-catalog__item-name">Смартфоны и аксессуары</span>
+                                        <svg class="menu-catalog__item-svg"><use xlink:href="img/sprite.svg#i-arrow-right"></use></svg>
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="" class="menu-catalog__item-link">
+                                        <img class="menu-catalog__item-img" src="../img/menu-icons/i-3.png" alt="">
+                                        <span href="" class="menu-catalog__item-name">Телевизоры и аксессуары</span>
+                                        <svg class="menu-catalog__item-svg"><use xlink:href="img/sprite.svg#i-arrow-right"></use></svg>
+            
+                                    </a>
+                                    <ul class="menu-catalog__sublist">
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="" class="menu-catalog__item-link">
+                                        <img class="menu-catalog__item-img" src="../img/menu-icons/i-4.svg" alt="">
+                                        <span href="" class="menu-catalog__item-name">Фото и видеотехника</span>
+                                        <svg class="menu-catalog__item-svg"><use xlink:href="img/sprite.svg#i-arrow-right"></use></svg>
+            
+                                    </a>
+                                    <ul class="menu-catalog__sublist">
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="" class="menu-catalog__item-link">
+                                        <img class="menu-catalog__item-img" src="../img/menu-icons/i-5.png" alt="">
+                                        <span href="" class="menu-catalog__item-name">Планшеты и аксессуары</span>
+                                        <svg class="menu-catalog__item-svg"><use xlink:href="img/sprite.svg#i-arrow-right"></use></svg>
+            
+                                    </a>
+                                    <ul class="menu-catalog__sublist">
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="" class="menu-catalog__item-link">
+                                        <img class="menu-catalog__item-img" src="../img/menu-icons/i-6.png" alt="">
+                                        <span href="" class="menu-catalog__item-name">Наушники и аудиотехника</span>
+                                        <svg class="menu-catalog__item-svg"><use xlink:href="img/sprite.svg#i-arrow-right"></use></svg>
+            
+                                    </a>
+                                    <ul class="menu-catalog__sublist">
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="" class="menu-catalog__item-link">
+                                        <img class="menu-catalog__item-img" src="../img/menu-icons/i-7.png" alt="">
+                                        <span href="" class="menu-catalog__item-name">Гейминг</span>
+                                        <svg class="menu-catalog__item-svg"><use xlink:href="img/sprite.svg#i-arrow-right"></use></svg>
+            
+                                    </a>
+                                    <ul class="menu-catalog__sublist">
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="" class="menu-catalog__item-link">
+                                        <img class="menu-catalog__item-img" src="../img/menu-icons/i-8.png" alt="">
+                                        <span href="" class="menu-catalog__item-name">Умные часы</span>
+                                        <svg class="menu-catalog__item-svg"><use xlink:href="img/sprite.svg#i-arrow-right"></use></svg>
+            
+                                    </a>
+                                    <ul class="menu-catalog__sublist">
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="" class="menu-catalog__item-link">
+                                        <img class="menu-catalog__item-img" src="../img/menu-icons/i-9.png" alt="">
+                                        <span href="" class="menu-catalog__item-name">Портативная акустика</span>
+                                        <svg class="menu-catalog__item-svg"><use xlink:href="img/sprite.svg#i-arrow-right"></use></svg>
+            
+                                    </a>
+                                    <ul class="menu-catalog__sublist">
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="" class="menu-catalog__item-link">
+                                        <img class="menu-catalog__item-img" src="../img/menu-icons/i-10.png" alt="">
+                                        <span href="" class="menu-catalog__item-name">Сетевое оборудование</span>
+                                        <svg class="menu-catalog__item-svg"><use xlink:href="img/sprite.svg#i-arrow-right"></use></svg>
+            
+                                    </a>
+                                    <ul class="menu-catalog__sublist">
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="" class="menu-catalog__item-link">
+                                        <img class="menu-catalog__item-img" src="../img/menu-icons/i-11.png" alt="">
+                                        <span href="" class="menu-catalog__item-name">Офисная техника</span>
+                                        <svg class="menu-catalog__item-svg"><use xlink:href="img/sprite.svg#i-arrow-right"></use></svg>
+            
+                                    </a>
+                                    <ul class="menu-catalog__sublist">
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="" class="menu-catalog__item-link">
+                                        <img class="menu-catalog__item-img" src="../img/menu-icons/i-12.png" alt="">
+                                        <span href="" class="menu-catalog__item-name">Умный дом</span>
+                                        <svg class="menu-catalog__item-svg"><use xlink:href="img/sprite.svg#i-arrow-right"></use></svg>
+            
+                                    </a>
+                                    <ul class="menu-catalog__sublist">
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                        <li class="menu-catalog__subitem">
+                                            <a href="" class="menu-catalog__subitem-link">Пункт</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <label for="header-search" class="header-search">
+                            <button class="header-search__btn" type="submit">
+                                <svg class="header-search__svg"><use xlink:href="img/sprite.svg#i-search"></use></svg>
+                            </button>
+                            <input type="text" name="header-search" class="header-search__input" placeholder="Поиск среди товаров">
+                        </label>
+                        <ul class="header-menu__list">
+                            <li class="header-menu__item">
+                                <a href="" class="header-menu__link">
+                                    <svg class="header-menu__svg"><use xlink:href="img/sprite.svg#i-profile"></use></svg>
+                                    Анастасия
+                                </a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="" class="header-menu__link">
+                                    <svg class="header-menu__svg"><use xlink:href="img/sprite.svg#i-purchases"></use></svg>
+                                    Покупки
+                                </a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="" class="header-menu__link">
+                                    <svg class="header-menu__svg"><use xlink:href="img/sprite.svg#i-favorites"></use></svg>
+                                    Избранное
+                                </a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="" class="header-menu__link">
+                                    <svg class="header-menu__svg"><use xlink:href="img/sprite.svg#i-basket"></use></svg>
+                                    Корзина
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-slider">
+                <div class="header-slider__container container">
+                    <div class="header-slider__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide active">
+                                <a href="" class="swiper-slide__link">
+                                    <svg class="swiper-slide__svg"><use xlink:href="img/sprite.svg#i-percent"></use></svg>
+                                    Акции
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="swiper-slide__link">
+                                    Смартфоны
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="swiper-slide__link">
+                                    Ноутбуки
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="swiper-slide__link">
+                                    Телевизоры
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="swiper-slide__link">
+                                    Видеотехника
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="swiper-slide__link">
+                                    Планшеты
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="swiper-slide__link">
+                                    Наушники
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="swiper-slide__link">
+                                    Гейминг
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="swiper-slide__link">
+                                    Умные часы
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="swiper-slide__link">
+                                    Моноблок
+                                </a>
+                            </div>
+                          </div>
+                          <div class="swiper-button__prev">
+                            <svg class="swiper-button__svg"><use xlink:href="img/sprite.svg#i-arrow-slider"></use></svg>
+                          </div>
+                          <div class="swiper-button__next">
+                            <svg class="swiper-button__svg"><use xlink:href="img/sprite.svg#i-arrow-slider"></use></svg>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <ul class="header-bottom__list">
+                    <li class="header-bottom__item active">
+                        <a href="" class="header-bottom__link">
+                            <svg class="header-bottom__svg"><use xlink:href="img/sprite.svg#i-home"></use></svg>
+                            <span class="header-bottom__name">Главная</span>
+                        </a>
+                    </li>
+                    <li class="header-bottom__item">
+                        <a href="" class="header-bottom__link">
+                            <svg class="header-bottom__svg"><use xlink:href="img/sprite.svg#i-search"></use></svg>
+                            <span class="header-bottom__name">Поиск</span>
+                        </a>
+                    </li>
+                    <li class="header-bottom__item">
+                        <a href="" class="header-bottom__link">
+                            <svg class="header-bottom__svg"><use xlink:href="img/sprite.svg#i-favorites"></use></svg>
+                            <span class="header-bottom__name">Избранное</span>
+                        </a>
+                    </li>
+                    <li class="header-bottom__item">
+                        <a href="" class="header-bottom__link">
+                            <svg class="header-bottom__svg"><use xlink:href="img/sprite.svg#i-basket"></use></svg>
+                            <span class="header-bottom__name">Корзина</span>
+                        </a>
+                    </li>
+                    <li class="header-bottom__item">
+                        <a href="" class="header-bottom__link">
+                            <svg class="header-bottom__svg"><use xlink:href="img/sprite.svg#i-profile"></use></svg>
+                            <span class="header-bottom__name">Профиль</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main-promo">
+                <div class="main__container container">
+                    <h1 class="main-promo__title">Акции</h1>
+                    <ul class="main-promo__list">
+                        <li class="main-promo__item">
+                            <a href="" class="main-promo__link">
+                                <picture class="main-promo__picture">
+                                    <source srcset="img/catalog/catalog-1.webp" type="image/webp">
+                                    <source srcset="img/catalog/catalog-1.png 1x, img/catalog/catalog-1_2x.png 2x" type="image/png">
+                                    <img class="main-promo__img" src="img/catalog/catalog-1.png" alt="">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="main-promo__item">
+                            <a href="" class="main-promo__link">
+                                <picture class="main-promo__picture">
+                                    <source srcset="img/catalog/catalog-2.webp" type="image/webp">
+                                    <source srcset="img/catalog/catalog-2.png 1x, img/catalog/catalog-2_2x.png 2x" type="image/png">
+                                    <img class="main-promo__img" src="img/catalog/catalog-2.png" alt="">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="main-promo__item">
+                            <a href="" class="main-promo__link">
+                                <picture class="main-promo__picture">
+                                    <source srcset="img/catalog/catalog-3.webp" type="image/webp">
+                                    <source srcset="img/catalog/catalog-3.png 1x, img/catalog/catalog-3_2x.png 2x" type="image/png">
+                                    <img class="main-promo__img" src="img/catalog/catalog-3.png" alt="">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="main-promo__item">
+                            <a href="" class="main-promo__link">
+                                <picture class="main-promo__picture">
+                                    <source srcset="img/catalog/catalog-4.webp" type="image/webp">
+                                    <source srcset="img/catalog/catalog-4.png 1x, img/catalog/catalog-4_2x.png 2x" type="image/png">
+                                    <img class="main-promo__img" src="img/catalog/catalog-4.png" alt="">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="main-promo__item">
+                            <a href="" class="main-promo__link">
+                                <picture class="main-promo__picture">
+                                    <source srcset="img/catalog/catalog-5.webp" type="image/webp">
+                                    <source srcset="img/catalog/catalog-5.png 1x, img/catalog/catalog-5_2x.png 2x" type="image/png">
+                                    <img class="main-promo__img" src="img/catalog/catalog-5.png" alt="">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="main-promo__item">
+                            <a href="" class="main-promo__link">
+                                <picture class="main-promo__picture">
+                                    <source srcset="img/catalog/catalog-6.webp" type="image/webp">
+                                    <source srcset="img/catalog/catalog-6.png 1x, img/catalog/catalog-6_2x.png 2x" type="image/png">
+                                    <img class="main-promo__img" src="img/catalog/catalog-6.png" alt="">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="main-promo__item">
+                            <a href="" class="main-promo__link">
+                                <picture class="main-promo__picture">
+                                    <source srcset="img/catalog/catalog-7.webp" type="image/webp">
+                                    <source srcset="img/catalog/catalog-7.png 1x, img/catalog/catalog-7_2x.png 2x" type="image/png">
+                                    <img class="main-promo__img" src="img/catalog/catalog-7.png" alt="">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="main-promo__item">
+                            <a href="" class="main-promo__link">
+                                <picture class="main-promo__picture">
+                                    <source srcset="img/catalog/catalog-8.webp" type="image/webp">
+                                    <source srcset="img/catalog/catalog-8.png 1x, img/catalog/catalog-8_2x.png 2x" type="image/png">
+                                    <img class="main-promo__img" src="img/catalog/catalog-8.png" alt="">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="main-promo__item">
+                            <a href="" class="main-promo__link">
+                                <picture class="main-promo__picture">
+                                    <source srcset="img/catalog/catalog-9.webp" type="image/webp">
+                                    <source srcset="img/catalog/catalog-9.png 1x, img/catalog/catalog-9_2x.png 2x" type="image/png">
+                                    <img class="main-promo__img" src="img/catalog/catalog-9.png" alt="">
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </body>
+    <footer class="footer" id="footer">
+        <div class="footer__container container">
+            <div class="footer-menu">
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                        <a href="" class="footer-menu__link">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="" class="footer-menu__link">
+                            Акции
+                        </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="" class="footer-menu__link">
+                            Магазины
+                        </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="" class="footer-menu__link">
+                            Профиль
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <ul class="footer-contacts__list">
+                    <li class="footer-contacts__item">
+                        <a href="tel:8 (800) 000 00 00" class="footer-contacts__link">
+                            <svg class="footer-contacts__svg footer-contacts__svg_tel"><use xlink:href="img/sprite.svg#i-phone"></use></svg>
+                            8 (800) 000 00 00
+                        </a>
+                    </li>
+                    <li class="footer-contacts__item">
+                        <a href="mailto:electrocity.ru" class="footer-contacts__link">
+                            <svg class="footer-contacts__svg footer-contacts__svg_mail"><use xlink:href="img/sprite.svg#i-mail"></use></svg>
+                            electrocity.ru
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <span class="footer-copyright__text">© 2014-2021 «ЭЛЕКТРОСИТИ». Все права защищены</span>
+            </div>
+            <div class="footer-social">
+                <ul class="footer-social__list">
+                    <li class="footer-social__item">
+                        <a href="https://vk.com/" class="footer-social__link">
+                            <svg class="footer-social__svg"><use xlink:href="img/sprite.svg#i-vk"></use></svg>
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a href="https://www.youtube.com/" class="footer-social__link">
+                            <svg class="footer-social__svg"><use xlink:href="img/sprite.svg#i-youtube"></use></svg>
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a href="https://web.telegram.org/" class="footer-social__link">
+                            <svg class="footer-social__svg"><use xlink:href="img/sprite.svg#i-tg"></use></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?v=af4348d74369fcb6119d9f3b94e36185"></script>
+    <script src="./js/main.min.js?v=af4348d74369fcb6119d9f3b94e36185"></script>
+</html>
